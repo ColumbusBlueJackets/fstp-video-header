@@ -1,6 +1,6 @@
 <div class="section">
 
-<img src="https://cms.nhl.bamgrid.com/images/photos/334723644/1000x1000/cut.png" alt="Primary Mark" width="200" height="200">
+<div class="overlay"> src="https://cms.nhl.bamgrid.com/images/photos/334723644/1000x1000/cut.png" alt="Primary Mark" width="200" height="200"></div>
 
         <div class="video-container">
             <div class="color-overlay"></div>
@@ -37,6 +37,23 @@
   top: 0;
   left: 0;
   width: 100%;
+}
+        
+  .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.overlay img{
+  position:absolute;
+  left:0;top:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  pointer-events:none;
+  z-index:2;
 }
 
 
